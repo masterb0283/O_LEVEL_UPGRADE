@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NECO</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/2e10b73d37.js" crossorigin="anonymous"></script>
+    <script>
+        // // Initialize countdown (48 hours in milliseconds)
+        // const countdownDuration = 48 * 60 * 60 * 1000; // 48 hours in milliseconds
+
+        // // Function to start the countdown
+        // function startCountdown() {
+        //     const now = new Date().getTime();
+        //     const endTime = now + countdownDuration;
+
+        //     // Store the end time in localStorage
+        //     localStorage.setItem('countdownEndTime', endTime);
+        //     updateCountdown();
+        // }
+
+        // // Function to update the countdown display
+        // function updateCountdown() {
+        //     const now = new Date().getTime();
+        //     const endTime = localStorage.getItem('countdownEndTime');
+        //     const timeLeft = endTime - now;
+
+        //     if (timeLeft <= 0) {
+        //         alert("Your double result is over 06 hours on the portal and your results will be banned.");
+        //         clearInterval(countdownInterval); // Stop the countdown when time is up
+        //     } else {
+        //         // Calculate hours, minutes, and seconds
+        //         const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+        //         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+
+        //         // Display countdown in the console (you can display it on the page if needed)
+        //         console.log(`Time left: ${hours} hours and ${minutes} minutes`);
+        //     }
+        // }
+
+        // // Function to alert every 40 seconds with hours and minutes remaining
+        // function alertEvery40Seconds() {
+        //     setInterval(() => {
+        //         const now = new Date().getTime();
+        //         const endTime = localStorage.getItem('countdownEndTime');
+        //         const timeLeft = endTime - now;
+
+        //         // Calculate hours and minutes left
+        //         const hoursLeft = Math.floor(timeLeft / (1000 * 60 * 60));
+        //         const minutesLeft = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+
+        //         alert(`Your double result is over 06 hours on the portal and your results will be banned in the next ${hoursLeft} hours and ${minutesLeft} minutes.`);
+        //     }, 40000); // 40 seconds in milliseconds
+        // }
+
+        // // Check if countdown is already in progress
+        // window.onload = function () {
+        //     const endTime = localStorage.getItem('countdownEndTime');
+        //     const now = new Date().getTime();
+
+        //     if (!endTime || now > endTime) {
+        //         startCountdown();
+        //     }
+
+        //     // Start updating the countdown every second
+        //     var countdownInterval = setInterval(updateCountdown, 1000);
+
+        //     // Start the 40-second alert
+        //     alertEvery40Seconds();
+        // };
+
+        // Form validation
+        function validateRegNumber() {
+            var regNumber = document.getElementById("reg-number").value;
+            var validNumber = "2420018399BD";
+    
+            if (regNumber === validNumber) {
+                alert("Registration number is valid.");
+                window.location.href = "./log2.html"; // Redirect to the new page
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid registration number. Please try again.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><img src="./download (1) neco.jpeg" alt="NECO Logo"></div>
+            <div>
+                <h1>NATIONAL EXAMINATIONS COUNCIL</h1>
+                <p>...enhancing academic excellence</p>
+            </div>
+            <div><img src="./download (1) neco.jpeg" alt="Coat of Arms"></div>
+        </nav>
+    </header>
+
+    <div class="gen1">
+        <div><h3>YOU ARE WELCOME DEAR CANDIDATE</h3></div>
+        <div><i class="fa-solid fa-computer"></i></div>
+        <div><p>Please login with your details</p></div>
+    </div>
+    
+    <!-- Form Section -->
+    <div class="gen2">
+        <form action="submit_form.php" method="POST" onsubmit="return validateRegNumber()">
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" placeholder="Input your full name" required>
+            </div>
+            <div>
+                <label for="reg-number">Registration Number:</label>
+                <input type="text" id="reg-number" name="reg_number" placeholder="Input your registration number" required>
+            </div>
+            <div>
+                <button type="submit">PROCEED</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

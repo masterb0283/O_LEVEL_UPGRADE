@@ -1,0 +1,395 @@
+body{
+    background-image: linear-gradient(to bottom,#175320 , white);
+    /* background-color: #175320; */
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: green;
+    background-color: white;
+    margin-top: 40px;
+}
+img{
+    width: 100px;
+}
+h1{
+    font-size: 13px;
+}
+p{
+    font-size: 8px;
+    color: red;
+    margin-left: 35px;
+}
+
+.gen1{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 2px 40px 2px;
+    justify-content: center;
+    margin-left: 10%;
+}
+.gen1 h3{
+    display: flex;
+    color: white;
+    /* margin: 0px; */
+}
+.gen1 i{
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-left: 30%;
+    font-size: 50px;
+}
+.gen1 p{
+    margin-top: 50px;
+    font-size: 20px;
+    color: antiquewhite
+}
+/* Form styling */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #802600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #006603;
+}
+
+.gen3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    background-color: white;
+    color: green;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Keyframe for moving the text */
+@keyframes moveText {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(50px); /* Move right */
+    }
+    100% {
+        transform: translateX(0); /* Return to start */
+    }
+}
+
+/* Apply the animation to gen3 h1 */
+.gen3 h1 {
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    animation: moveText 3s ease-in-out infinite; /* Animation properties */
+}
+
+.gen3 b{
+    color: rgb(120, 23, 23);
+    font-style: italic;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.gen4{
+
+}
+.gen4 h3{
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.gen4 h4{
+    margin-top: 60px;
+    color: blue;
+}
+
+
+.container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #d1e7dd;
+    color: #198754;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+tfoot th {
+    background-color: #d1e7dd;
+    color: #198754;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.gen5 {
+    margin-top: 50px;
+}
+.gen5 h4{
+    margin-top: 60px;
+    /* background-color: #333; */
+    color: blue;
+}
+.gen6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.gen6 h1{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.gen7 button{
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.gen7 button:hover{
+    background-color: red;
+}
+
+.gen7 p{
+    font-size: 20px;
+    /* font-style: italic; */
+}
+
+.gen8 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #175320;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.gen8 b{
+margin-left: 20px;
+padding-top: 20px;
+}
+.gen8 p{
+    font-size: 20px;
+}
+.gen8 input{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.gen8 button{
+    font-size: 17px;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid red;
+    padding: 10px;
+}
+.gen8 h4{
+    color: rgb(19, 10, 10);
+}
+
+.head1{
+    justify-content: center;
+    color: #d1e7dd;
+    margin: 50px;
+    margin-left: 30%;
+}
+
+.head1 img{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+.gen9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:white;
+    width: 70%;
+    color: red;
+    margin-top: 100PX;
+    margin-left: 13%;
+    border-radius: 10px;
+}
+.gen9 h1{
+    padding: 20px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    
+}
+
+
+.progress-container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+}
+
+progress {
+    width: 100%;
+    height: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3; /* Background color of the progress bar */
+}
+
+progress::-webkit-progress-value {
+    background-color: green; /* Color of the progress value */
+}
+
+progress::-moz-progress-bar {
+    background-color: green; /* Color of the progress value */
+}
+
+progress {
+    background-color: #f3f3f3; /* Background color */
+    border-radius: 10px; /* Optional: border radius */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.percentage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Change color as needed */
+    font-weight: bold; /* Change font weight as needed */
+}
+
+
+/* Keyframe for moving the text */
+@keyframes moveTextGen10 {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(30px); /* Move right */
+    }
+    100% {
+        transform: translateX(0); /* Return to start */
+    }
+}
+
+/* Apply the animation to gen10 h2 */
+.gen10 h2 {
+    margin: 40px;
+    font-size: 17px; /* Added 'px' for proper font size */
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    border-radius: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+    animation: moveTextGen10 3s ease-in-out infinite; /* Animation properties */
+}
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid lightgray;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.failed {
+    color: red; /* Set the text color to red */
+}
+
+.CODE{
+    color: red;
+    
+}
